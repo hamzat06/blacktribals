@@ -1,0 +1,93 @@
+/**************
+****Defaults
+***************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+}
+
+/* Headings Default */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #444;
+	font-family: 'Averia Serif Libre', cursive;
+}
+
+/* Form Defaults */
+form h2 {
+	margin: 25px auto;
+	text-align: center;
+	font-family: 'Averia Serif Libre', cursive;
+}
+
+form input {
+	width: 100%;
+	display: block;
+	padding: 13px;
+	font-size: 1em;
+	margin: 5px auto 10px;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background: transparent;
+	border: 1px solid #3e606f;
+}
+
+form input:focus {
+	outline: none;
+}
+
+/* Button Default */
+.btn {
+	color: white;
+	background: #4e6166;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	letter-spacing: .1em;
+	margin: 10px 0;
+	padding: 13px 20px;
+	text-decoration: none;
+}
+
+.container {
+	width: 80%;
+	margin: 0px auto;
+}
+
+/* Navbar */
+.navbar {
+	margin: 0 auto;
+	overflow: hidden;
+	background: #3e606f;
+	border-radius: 0 0 6px 6px;
+}
+
+.navbar ul {
+	list-style-type: none;
+	float: right;
+}
+
+.navbar ul li {
+	float: left;
+	font-family: 'Noto Serif', serif;
+	background-color: #334f5c;
+}
+
+/*Logo */
