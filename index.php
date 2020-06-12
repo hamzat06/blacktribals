@@ -18,30 +18,33 @@
 		<!-- navbar -->
 		<?php include('includes/navbar.php') ?>
 		<!--// navbar -->
+	
+		<div class="container-center">
+			<!-- banner -->
+			<?php include('includes/banner.php') ?>
 
-		<!-- banner -->
-		<?php include('includes/banner.php') ?>
-
-		<!-- Page Content -->
-		<div class="content">
-			<h2 class="content-title">Recent Posts</h2>
-			<hr>
-			<?php foreach ($posts as $post): ?>
-				<div class="post" style="margin-left: 0;">
-					<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
-					<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>" >
-						<div class="post_info">
-							<h3><?php echo $post['title'] ?></h3>
-							<div class="info">
-								<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
-								<span class="read_more">Read more...</span>
+			<!-- Page Content -->
+			<div class="content">
+				<h2 class="content-title">Recent Posts</h2>
+				<hr>
+				<?php foreach ($posts as $post): ?>
+					<div class="post" style="margin-left: 0;">
+						<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
+						<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>" >
+							<div class="post_info">
+								<h3><?php echo $post['title'] ?></h3>
+								<div class="info">
+									<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
+									<span class="read_more">Read more...</span>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-			<?php endforeach ?>
+						</a>
+					</div>
+				<?php endforeach ?>
+			</div>
+			<!--// Page Content -->
 		</div>
-		<!--// Page Content -->
+		
 
 		<!-- footer -->
 		<?php include('includes/footer.php') ?>
